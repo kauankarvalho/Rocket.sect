@@ -18,29 +18,33 @@
     <title>Rocket.sect</title>
   </head>
 
-  <body class="h-screen bg-[#2F2E41] grid grid-rows-[auto_1fr_auto]">
-    <header class="flex justify-center mt-[7.1rem] mb-[10.1rem]">
+  <body class="h-screen bg-[#2F2E41] grid grid-rows-[auto_1fr_auto] px-[3rem]">
+    <header class="flex justify-center mt-[7.1rem] mb-[10.1rem] max-[900px]:mb-[4rem]">
       <section class="flex justify-between w-[100%] max-w-[120.8rem] h-max">
         <a href="#"><img src="./src/assets/logo.svg" alt="Logomarca Rocket.sect" /></a>
 
-        <nav>
+        <nav class="max-[650px]:hidden">
           <ul class="flex gap-[6.4rem] text-white text-[1.4rem]/[2.8rem] font-medium font-jetbrains_mono">
             <li><a class="hover:opacity-50 transition-opacity duration-[0.3s]" href="#">Início</a></li>
             <li><a class="hover:opacity-50 transition-opacity duration-[0.3s]" href="#">Serviços</a></li>
             <li><a class="hover:opacity-50 transition-opacity duration-[0.3s]" href="#">Contato</a></li>
           </ul>
         </nav>
+
+        <img class="hidden max-[650px]:block" src="./src/assets/menu.svg" alt="Ícone de um menu." />
       </section>
     </header>
 
-    <main class="flex gap-[8rem] justify-center">
+    <main
+      class="flex gap-[8rem] justify-center max-[900px]:flex-col max-[900px]:items-center max-[900px]:gap-[2rem] max-[900px]:mb-[4rem]"
+    >
       <img
-        class="w-[40rem] h-[28.3rem]"
+        class="w-[40rem] h-[max] max-[900px]:w-[25rem]"
         src="./src/assets/image.svg"
         alt="Uma mulher de blusa verde-água está ao lado de um computador gigante."
       />
 
-      <section class="flex flex-col gap-[5.9rem] text-center w-[100%] max-w-[61rem]">
+      <section class="flex flex-col gap-[5.9rem] text-center w-[100%] max-w-[61rem] max-[900px]:gap-[2.5rem]">
         <h1 class="font-jetbrains_mono text-[3.6rem]/[4rem] text-white font-bold">
           Seus dados estão <span class="text-[#00BFA6]">protegidos</span>?
         </h1>
@@ -58,15 +62,15 @@
       </section>
     </main>
 
-    <footer class="flex flex-col gap-[2.7rem] items-center mb-[2rem]">
-      <div id="line" class="h-[0px] w-[56.8rem] border-[1px] border-[#00BFA6]"></div>
+    <footer class="flex flex-col gap-[2.7rem] items-center pb-[2rem]">
+      <div id="line" class="h-[0px] w-[100%] max-w-[56.8rem] border-[1px] border-[#00BFA6]"></div>
 
-      <p class="font-jetbrains_mono text-[1.4rem]/[2.8rem] text-white font-medium">
+      <p class="font-jetbrains_mono text-[1.4rem]/[2.8rem] text-white font-medium text-center">
         para mais informações nos siga no instagram @rocketsect
       </p>
 
       <img
-        class="fixed bottom-[2rem] left-[2rem]"
+        class="fixed bottom-[2rem] left-[2rem] max-[800px]:hidden"
         src="./src/assets/padlock-decoration.svg"
         alt="Um desenho de um cadeado."
       />
